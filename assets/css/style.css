@@ -19,3 +19,15 @@ a {
 .clock-logo {
     width: 80px;
 }
+
+body {
+    background-color: rgb(206, 206, 212);
+}
+
+.introduction-header {
+    margin-top: 80px;
+}
+
+.introduction-text {
+    margin: 50px 10% 50px 10%;
+}
