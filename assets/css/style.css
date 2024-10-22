@@ -33,7 +33,18 @@ body {
     margin: 50px 10% 50px 10%;
 }
 
+.time-left-card {
+    margin-top: 50px;
+}
+
 .btn-enter {
+    background-color: #2c3e50;
+    color: #fff;
+    width: 150px;
+}
+
+.btn-trip-logs {
+    margin-top: 80px;
     background-color: #2c3e50;
     color: #fff;
     width: 150px;
