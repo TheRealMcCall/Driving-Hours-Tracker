@@ -1,6 +1,21 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(206, 206, 212);
+    min-height: 100%;
+}
+
+main {
+    flex: 1
+}
+
 header {
     background-color: #2c3e50;
-    height: 150px;
+    height: 100px;
     font-size: 1.5rem;
 }
 
@@ -17,20 +32,22 @@ a {
 }
 
 .clock-logo {
-    width: 80px;
-}
-
-body {
-    background-color: rgb(206, 206, 212);
-    height: 100%;
+    width: 60px;
 }
 
 .introduction-header {
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .introduction-text {
-    margin: 50px 10% 50px 10%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+strong {
+    font-size: 115%;
 }
 
 .time-left-card {
@@ -41,6 +58,7 @@ body {
     background-color: #2c3e50;
     color: #fff;
     width: 150px;
+    margin-top: 20px;
 }
 
 .btn-trip-logs {
@@ -52,7 +70,7 @@ body {
 
 .footerstyle {
     background-color: #2c3e50;
-    height: 100px;
+    max-height: 25px;
     color: white;
 
 }
