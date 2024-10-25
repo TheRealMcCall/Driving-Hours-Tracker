@@ -46,6 +46,14 @@ a {
     margin-right: 20px;
 }
 
+.trip-input {
+    width: 50px;
+}
+
+.total-time-output {
+    text-align: center;
+}
+
 strong {
     font-size: 115%;
 }

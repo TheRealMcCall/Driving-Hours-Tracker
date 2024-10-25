@@ -39,28 +39,31 @@
             </div>
 
             <!-- Trip 1 -->
-            <section class="container fluid">
-                <div class="row">
-                    <div class="col">
-                        <h3 class="text-center">Trip 1</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label for="start-time-trip1" class="form-label">Start Time</label>
-                            <input type="time" class="form-control" id="start-time-trip1">
-                        </div>
-                        <div class="col">
-                            <label for="end-time-trip1" class="form-label">Finish Time</label>
-                            <input type="time" class="form-control" id="end-time-trip1">
-                        </div>
-                        <div class="col">
-                            <label for="total-time-trip1" class="form-label">Total Time</label>
-                            <input type="text" class="form-control readonly-input" id="total-time-trip1" readonly
-                                placeholder="Total Time">
-                        </div>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col text-center">
+                        <h3>Trip 1</h3>
                     </div>
                 </div>
-            </section>
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-auto text-center">
+                        <label for="start-time-trip1" class="form-label">Start Time</label>
+                        <input type="time" class="form-control trip-input w-auto mx-auto" id="start-time-trip1">
+                    </div>
+                    <div class="col-auto text-center">
+                        <label for="end-time-trip1" class="form-label">Finish Time</label>
+                        <input type="time" class="form-control trip-input w-auto mx-auto" id="end-time-trip1">
+                    </div>
+                    <div class="col-auto text-center">
+                        <label for="total-time-trip1" class="form-label">Total Time</label>
+                        <input type="text" class="form-control total-time-output readonly-input" id="total-time-trip1"
+                            readonly placeholder="Total Time">
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="container-fluid footerstyle fixed-bottom">

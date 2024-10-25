@@ -27,7 +27,7 @@ function hoursDriven() {
     console.log(hours, minutes);
 
     // Return the formatted string of hours and minutes driven
-    return `${hours} hour(s) and ${minutes} minute(s)`;
+    return `${hours} hr(s) and ${minutes} min(s)`;
 }
 
 // Function to update the total time driven in the output field
