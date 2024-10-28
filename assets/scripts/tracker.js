@@ -86,3 +86,14 @@ for (let i = 1; i <= 6; i++) {
     document.getElementById(`start-time-trip${i}`).addEventListener("input", updateTotalHoursDriven);
     document.getElementById(`end-time-trip${i}`).addEventListener("input", updateTotalHoursDriven);
 }
+
+// Add event listeners to add and remove trip by adjusting css styling
+for (let i = 2; i <= 6; i++) {
+    document.getElementById(`addTrip${i}`).addEventListener('click', function () {
+        document.getElementById(`trip${i}`).classList.remove('hidden');
+    });
+
+    document.getElementById(`removeTrip${i}`).addEventListener('click', function () {
+        document.getElementById(`trip${i}`).classList.add('hidden');
+    });
+}

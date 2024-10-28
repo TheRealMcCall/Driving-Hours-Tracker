@@ -50,6 +50,10 @@ a {
     width: 50px;
 }
 
+.hidden {
+    display: none;
+}
+
 .total-time-output {
     text-align: center;
 }
