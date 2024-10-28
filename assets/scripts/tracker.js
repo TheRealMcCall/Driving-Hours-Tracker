@@ -39,3 +39,11 @@ function updateTotalTime() {
 ["start-time-trip1", "end-time-trip1"].forEach(function (id) {
     document.getElementById(id).addEventListener("input", updateTotalTime);
 });
+
+document.getElementById('addTrip2').addEventListener('click', function () {
+    document.getElementById('trip2').classList.remove('hidden');
+});
+
+document.getElementById('removeTrip2').addEventListener('click', function () {
+    document.getElementById('trip2').classList.add('hidden');
+});

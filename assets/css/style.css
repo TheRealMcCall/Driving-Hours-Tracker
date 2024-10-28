@@ -58,6 +58,15 @@ a {
     text-align: center;
 }
 
+.trip-buttons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
 strong {
     font-size: 115%;
 }
