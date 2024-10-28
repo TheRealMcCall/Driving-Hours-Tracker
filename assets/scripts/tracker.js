@@ -62,6 +62,23 @@ function updateTotalHoursDriven() {
     document.getElementById('total-time-driven-today').textContent = `${totalHours} hours ${totalMinutes} minutes`;
     console.log("Total Time Driven=", totalHours, totalMinutes);
 
+    // Maximum driving hours per day setting
+    const MaxDailyDrivingMinutes = 10 * 60;
+
+    // remaining time calculation
+    let remainingMinutes = MaxDailyDrivingMinutes - (totalHours * 60 + totalMinutes);
+    let remainingHours = Math.floor(Math.floor(remainingMinutes) / 60);
+    remainingMinutes = Math.floor(remainingMinutes) % 60;
+
+    // Set the remaining time text
+    let remainingText;
+    if (remainingHours >= 0) {
+        remainingText = `${remainingHours} hr ${remainingMinutes} min`;
+    } else {
+        remainingText = `Exceeded by ${Math.floor(remainingHours)} hr ${Math.floor(remainingMinutes)} min`;
+    }
+    document.getElementById('remaining-time-today').textContent = remainingText;
+    console.log("Remaining Time =", remainingText);
 }
 
 // Event listeners to update total hours driven today
