@@ -38,227 +38,47 @@
                 </h2>
             </div>
 
-            <!-- Trip 1 -->
-            <div class="container-fluid" id="trip1">
+            <!-- button for adding trip logs -->
+            <div class="container-fluid" id="addLogButton">
                 <div class="row justify-content-center">
                     <div class="col text-center">
-                        <h3>Trip 1</h3>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-auto text-center">
-                        <label for="start-time-trip1" class="form-label">Start Time</label>
-                        <input type="time" class="form-control trip-input w-auto mx-auto" id="start-time-trip1">
-                    </div>
-                    <div class="col-auto text-center">
-                        <label for="end-time-trip1" class="form-label">Finish Time</label>
-                        <input type="time" class="form-control trip-input w-auto mx-auto" id="end-time-trip1">
-                    </div>
-                    <div class="col-auto text-center">
-                        <label for="total-time-trip1" class="form-label">Total Time</label>
-                        <input type="text" class="form-control total-time-output readonly-input" id="total-time-trip1"
-                            readonly placeholder="Total Time">
-                    </div>
-                </div>
-                <div class="row justify-content-center align-items-center">
-                    <div class=" col-auto text-center">
-                        <label for="break-trip1" class="form-label">Break Time</label>
-                        <input type="text" class="form-control break-time-output readonly-input" id="break-time-trip1"
-                            readonly placeholder="Break Time">
-                    </div>
-                </div>
-                <div class="row justify-content-center trip-buttons align-items-center">
-                    <div class="col text-center">
-                        <button id="addTrip2">Add Trip</button>
-                        <button id="removeTrip2">Remove Trip</button>
+                        <button type="button" class="btn btn-enter" data-bs-toggle="modal"
+                            data-bs-target="#addLogModal">
+                            Add Log
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <!-- Trip 2 -->
-            <div class="container-fluid hidden" id="trip2">
-                <div class="row justify-content-center">
-                    <div class="col text-center">
-                        <h3>Trip 2</h3>
+            <!-- code for modal -->
+            <div class="modal" id="addLogModal" tabindex="-1" aria-labelledby="addLog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-center w-100" id="addLog">Enter your trips start and finish
+                                times
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="cancel"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-auto text-center">
+                                    <label for="trip-start-time" class="form-label">Start Time</label>
+                                    <input type="time" class="form-control" id="trip-start-time">
+                                </div>
+                                <div class="col-auto text-center">
+                                    <label for="trip-finish-time" class="form-label">Finish Time</label>
+                                    <input type="time" class="form-control" id="trip-finish-time">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary" onclick="saveLog()">Save changes</button>
+                        </div>
                     </div>
                 </div>
-
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-auto text-center">
-                        <label for="start-time-trip2" class="form-label">Start Time</label>
-                        <input type="time" class="form-control trip-input w-auto mx-auto" id="start-time-trip2">
-                    </div>
-                    <div class="col-auto text-center">
-                        <label for="end-time-trip2" class="form-label">Finish Time</label>
-                        <input type="time" class="form-control trip-input w-auto mx-auto" id="end-time-trip2">
-                    </div>
-                    <div class="col-auto text-center">
-                        <label for="total-time-trip2" class="form-label">Total Time</label>
-                        <input type="text" class="form-control total-time-output readonly-input" id="total-time-trip2"
-                            readonly placeholder="Total Time">
-                    </div>
-                </div>
-                <div class="row justify-content-center align-items-center">
-                    <div class=" col-auto text-center">
-                        <label for="break-trip2" class="form-label">Break Time</label>
-                        <input type="text" class="form-control break-time-output readonly-input" id="break-time-trip2"
-                            readonly placeholder="Break Time">
-                    </div>
-                </div>
-                <div class="row justify-content-center trip-buttons align-items-center">
-                    <div class="col text-center">
-                        <button id="addTrip3">Add Trip</button>
-                        <button id="removeTrip3">Remove Trip</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Trip 3 -->
-            <div class="container-fluid hidden" id="trip3">
-                <div class="row justify-content-center">
-                    <div class="col text-center">
-                        <h3>Trip 3</h3>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-auto text-center">
-                        <label for="start-time-trip3" class="form-label">Start Time</label>
-                        <input type="time" class="form-control trip-input w-auto mx-auto" id="start-time-trip3">
-                    </div>
-                    <div class="col-auto text-center">
-                        <label for="end-time-trip3" class="form-label">Finish Time</label>
-                        <input type="time" class="form-control trip-input w-auto mx-auto" id="end-time-trip3">
-                    </div>
-                    <div class="col-auto text-center">
-                        <label for="total-time-trip3" class="form-label">Total Time</label>
-                        <input type="text" class="form-control total-time-output readonly-input" id="total-time-trip3"
-                            readonly placeholder="Total Time">
-                    </div>
-                </div>
-                <div class="row justify-content-center align-items-center">
-                    <div class=" col-auto text-center">
-                        <label for="break-trip1" class="form-label">Break Time</label>
-                        <input type="text" class="form-control break-time-output readonly-input" id="break-time-trip3"
-                            readonly placeholder="Break Time">
-                    </div>
-                </div>
-                <div class="row justify-content-center trip-buttons align-items-center">
-                    <div class="col text-center">
-                        <button id="addTrip4">Add Trip</button>
-                        <button id="removeTrip4">Remove Trip</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Trip 4 -->
-            <div class="container-fluid hidden" id="trip4">
-                <div class="row justify-content-center">
-                    <div class="col text-center">
-                        <h3>Trip 4</h3>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-auto text-center">
-                        <label for="start-time-trip4" class="form-label">Start Time</label>
-                        <input type="time" class="form-control trip-input w-auto mx-auto" id="start-time-trip4">
-                    </div>
-                    <div class="col-auto text-center">
-                        <label for="end-time-trip4" class="form-label">Finish Time</label>
-                        <input type="time" class="form-control trip-input w-auto mx-auto" id="end-time-trip4">
-                    </div>
-                    <div class="col-auto text-center">
-                        <label for="total-time-trip4" class="form-label">Total Time</label>
-                        <input type="text" class="form-control total-time-output readonly-input" id="total-time-trip4"
-                            readonly placeholder="Total Time">
-                    </div>
-                </div>
-                <div class="row justify-content-center align-items-center">
-                    <div class=" col-auto text-center">
-                        <label for="break-trip4" class="form-label">Break Time</label>
-                        <input type="text" class="form-control break-time-output readonly-input" id="break-time-trip4"
-                            readonly placeholder="Break Time">
-                    </div>
-                </div>
-                <div class="row justify-content-center trip-buttons align-items-center">
-                    <div class="col text-center">
-                        <button id="addTrip5">Add Trip</button>
-                        <button id="removeTrip5">Remove Trip</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Trip 5 -->
-            <div class="container-fluid hidden" id="trip5">
-                <div class="row justify-content-center">
-                    <div class="col text-center">
-                        <h3>Trip 5</h3>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-auto text-center">
-                        <label for="start-time-trip5" class="form-label">Start Time</label>
-                        <input type="time" class="form-control trip-input w-auto mx-auto" id="start-time-trip5">
-                    </div>
-                    <div class="col-auto text-center">
-                        <label for="end-time-trip5" class="form-label">Finish Time</label>
-                        <input type="time" class="form-control trip-input w-auto mx-auto" id="end-time-trip5">
-                    </div>
-                    <div class="col-auto text-center">
-                        <label for="total-time-trip5" class="form-label">Total Time</label>
-                        <input type="text" class="form-control total-time-output readonly-input" id="total-time-trip5"
-                            readonly placeholder="Total Time">
-                    </div>
-                </div>
-                <div class="row justify-content-center align-items-center">
-                    <div class=" col-auto text-center">
-                        <label for="break-trip15 class=" form-label">Break Time</label>
-                        <input type="text" class="form-control break-time-output readonly-input" id="break-time-trip5"
-                            readonly placeholder="Break Time">
-                    </div>
-                </div>
-                <div class="row justify-content-center trip-buttons align-items-center">
-                    <div class="col text-center">
-                        <button id="addTrip6">Add Trip</button>
-                        <button id="removeTrip6">Remove Trip</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Trip 6 -->
-            <div class="container-fluid hidden" id="trip6">
-                <div class="row justify-content-center">
-                    <div class="col text-center">
-                        <h3>Trip 6</h3>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-auto text-center">
-                        <label for="start-time-trip6" class="form-label">Start Time</label>
-                        <input type="time" class="form-control trip-input w-auto mx-auto" id="start-time-trip6">
-                    </div>
-                    <div class="col-auto text-center">
-                        <label for="end-time-trip6" class="form-label">Finish Time</label>
-                        <input type="time" class="form-control trip-input w-auto mx-auto" id="end-time-trip6">
-                    </div>
-                    <div class="col-auto text-center">
-                        <label for="total-time-trip6" class="form-label">Total Time</label>
-                        <input type="text" class="form-control total-time-output readonly-input" id="total-time-trip6"
-                            readonly placeholder="Total Time">
-                    </div>
-                </div>
-                <div class="row justify-content-center align-items-center">
-                    <div class=" col-auto text-center">
-                        <label for="break-trip6" class="form-label">Break Time</label>
-                        <input type="text" class="form-control break-time-output readonly-input" id="break-time-trip6"
-                            readonly placeholder="Break Time">
-                    </div>
-                </div>
-            </div>
             </div>
 
         </section>
