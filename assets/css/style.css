@@ -51,6 +51,11 @@ a {
     width: 50px;
 }
 
+.trip-entry {
+    background-color: #2b3e4f;
+    color: white;
+}
+
 .hidden {
     display: none;
 }
