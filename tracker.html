@@ -38,14 +38,17 @@
                 </h2>
             </div>
 
-            <!-- button for adding trip logs -->
-            <div class="container-fluid" id="addLogButton">
+            <!-- buttons for adding and removing trip logs -->
+            <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col text-center">
-                        <button type="button" class="btn btn-enter" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-add-log" data-bs-toggle="modal" id="addLogButton"
                             data-bs-target="#addLogModal">
                             Add Log
                         </button>
+                        <button type="button" class="btn btn-remove-log" id="removeLogButton">Remove Last Log
+                        </button>
+
                     </div>
                 </div>
             </div>

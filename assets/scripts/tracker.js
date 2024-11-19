@@ -13,8 +13,8 @@ function saveLog() {
         finishTime
     });
 
-    // Log the trips array to the console
-    console.log("Log to check if array is saving properly", trips);
+    // Log to check trips being added to the array
+    console.log("Log to check if array is being added to properly", trips);
 
     // use addTrip function to display trip container on the tracker page.
     addTrip();
@@ -40,5 +40,20 @@ function addTrip() {
     });
 }
 
+// Function to delete last trip log
+function removeLastLog(index) {
+    // Remove the trip from the trips array
+    trips.splice(index, 1);
+
+    // Re-add the remaining trips to the page
+    addTrip();
+
+    // Log to check trips are being removed from the array
+    console.log("Log to check if array is being removed from properly", trips);
+}
+
 // Event listener for the "Save changes" button in the modal
 document.getElementById("save-log-btn").addEventListener("click", saveLog);
+
+// Event listener for the "Remove Last Log" button
+document.getElementById("removeLogButton").addEventListener("click", removeLastLog);
