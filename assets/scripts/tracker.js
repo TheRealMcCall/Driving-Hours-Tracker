@@ -23,6 +23,10 @@ function saveLog() {
 // Function to add trips to the page
 function addTrip() {
     let tripContainer = document.getElementById("tripContainer");
+
+    // Clear existing trips
+    tripContainer.innerHTML = "";
+
     trips.forEach((trip, index) => {
         let tripDiv = document.createElement("div");
         tripDiv.classList.add("trip-entry");
