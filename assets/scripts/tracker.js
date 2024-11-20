@@ -8,7 +8,7 @@ function saveLog() {
     let finishTime = document.getElementById("trip-finish-time").value;
 
     // created variable to hold trip duration in the trips array
-    let tripDuration = (calculateTripDuration(startTime, finishTime));
+    let tripDuration = calculateTripDuration(startTime, finishTime);
 
     // Add the relevant variables to the trips array trip
     trips.push({
@@ -47,8 +47,8 @@ function addTrip() {
 
 // Function to delete last trip log
 function removeLastLog(index) {
-    // Remove the trip from the trips array
-    trips.splice(index, 1);
+    // Remove the last trip log from the trips array
+    trips.pop();
 
     // Re-add the remaining trips to the page
     addTrip();
