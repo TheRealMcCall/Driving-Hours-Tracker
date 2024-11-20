@@ -8,7 +8,7 @@ function saveLog() {
     let finishTime = document.getElementById("trip-finish-time").value;
 
     // created variable to hold trip duration in the trips array
-    let tripDuration = ("calculated trip duration will go here");
+    let tripDuration = (calculateTripDuration(startTime, finishTime));
 
     // Add the relevant variables to the trips array trip
     trips.push({
@@ -56,6 +56,23 @@ function removeLastLog(index) {
     // Log to check trips are being removed from the array
     console.log("Log to check if array is being removed from properly", trips);
 }
+
+function calculateTripDuration(startTime, finishTime) {
+    let [startHour, startMinute] = startTime.split(":").map(Number);
+    let [finishHour, finishMinute] = finishTime.split(":").map(Number);
+
+    let startTotalMinutes = startHour * 60 + startMinute;
+    let finishTotalMinutes = finishHour * 60 + finishMinute;
+
+    let totalMinutes = finishTotalMinutes - startTotalMinutes;
+    let hours = Math.floor(totalMinutes / 60);
+    let minutes = totalMinutes % 60;
+
+    console.log("Time between start and finish time", hours, minutes);
+
+    return `${hours} hours ${minutes} minutes`;
+}
+
 
 // Event listener for the "Save changes" button in the modal
 document.getElementById("save-log-btn").addEventListener("click", saveLog);
