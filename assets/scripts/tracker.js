@@ -7,10 +7,14 @@ function saveLog() {
     let startTime = document.getElementById("trip-start-time").value;
     let finishTime = document.getElementById("trip-finish-time").value;
 
-    // Add the new trip to the trips array
+    // created variable to hold trip duration in the trips array
+    let tripDuration = ("calculated trip duration will go here");
+
+    // Add the relevant variables to the trips array trip
     trips.push({
         startTime,
-        finishTime
+        finishTime,
+        tripDuration
     });
 
     // Log to check trips being added to the array
@@ -27,6 +31,7 @@ function addTrip() {
     // Clear existing trips
     tripContainer.innerHTML = "";
 
+    //Creates a div with information for each trip log saved.
     trips.forEach((trip, index) => {
         let tripDiv = document.createElement("div");
         tripDiv.classList.add("trip-entry");
@@ -34,7 +39,7 @@ function addTrip() {
             <h3>Trip ${index + 1}</h3>
             <p><strong>Start:</strong> ${trip.startTime}</p>
             <p><strong>Finish:</strong> ${trip.finishTime}</p>
-            <p><strong>Duration:</strong> [Placeholder for Duration]</p>
+            <p><strong>Duration:</strong> ${trip.tripDuration}</p>
         `;
         tripContainer.appendChild(tripDiv);
     });
