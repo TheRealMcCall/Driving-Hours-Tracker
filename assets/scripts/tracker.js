@@ -22,6 +22,8 @@ function saveLog() {
 
     // use addTrip function to display trip container on the tracker page.
     addTrip();
+
+    calculateTotalDrivingTime()
 }
 
 // Function to add trips to the page
@@ -57,6 +59,7 @@ function removeLastLog(index) {
     console.log("Log to check if array is being removed from properly", trips);
 }
 
+//Function to calculate trip duration
 function calculateTripDuration(startTime, finishTime) {
     let [startHour, startMinute] = startTime.split(":").map(Number);
     let [finishHour, finishMinute] = finishTime.split(":").map(Number);
@@ -73,6 +76,27 @@ function calculateTripDuration(startTime, finishTime) {
     return `${hours} hours ${minutes} minutes`;
 }
 
+// Function to calculate the total driving hours for the day
+function calculateTotalDrivingTime() {
+    let totalMinutes = 0;
+
+    // Loop through all trips and calculate the total time in minutes
+    trips.forEach(trip => {
+        let [startHour, startMinute] = trip.startTime.split(":").map(Number);
+        let [finishHour, finishMinute] = trip.finishTime.split(":").map(Number);
+
+        let startTotalMinutes = startHour * 60 + startMinute;
+        let finishTotalMinutes = finishHour * 60 + finishMinute;
+
+        totalMinutes += (finishTotalMinutes - startTotalMinutes);
+    });
+
+    let totalHours = Math.floor(totalMinutes / 60);
+    let remainingMinutes = totalMinutes % 60;
+
+    // Update total time on the page
+    document.getElementById("total-time-driven-today").textContent = `${totalHours} hours ${remainingMinutes} minutes`;
+}
 
 // Event listener for the "Save changes" button in the modal
 document.getElementById("save-log-btn").addEventListener("click", saveLog);
