@@ -55,6 +55,9 @@ function removeLastLog(index) {
     // Re-add the remaining trips to the page
     addTrip();
 
+    // Recalculate total driving time
+    calculateTotalDrivingTime();
+
     // Log to check trips are being removed from the array
     console.log("Log to check if array is being removed from properly", trips);
 }
@@ -93,6 +96,8 @@ function calculateTotalDrivingTime() {
 
     let totalHours = Math.floor(totalMinutes / 60);
     let remainingMinutes = totalMinutes % 60;
+
+    console.log("Calculation of trip time for the day", totalHours, remainingMinutes);
 
     // Update total time on the page
     document.getElementById("total-time-driven-today").textContent = `${totalHours} hours ${remainingMinutes} minutes`;
