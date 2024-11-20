@@ -101,6 +101,16 @@ function calculateTotalDrivingTime() {
 
     // Update total time on the page
     document.getElementById("total-time-driven-today").textContent = `${totalHours} hours ${remainingMinutes} minutes`;
+
+    // Calculate the remaining time (assuming maximum daily driving time is 10 hours)
+    let maxDailyDrivingTime = 10 * 60;
+    let remainingMinutesToday = maxDailyDrivingTime - totalMinutes;
+    let remainingHours = Math.floor(remainingMinutesToday / 60);
+    let remainingMinutesLeft = remainingMinutesToday % 60;
+
+    console.log("Calculation of remaining time left for the day", maxDailyDrivingTime, "-", totalMinutes, "=", remainingHours, "hours", remainingMinutesLeft, "minutes left");
+
+    document.getElementById("remaining-time-today").textContent = `${remainingHours} hours ${remainingMinutesLeft} minutes`;
 }
 
 // Event listener for the "Save changes" button in the modal
