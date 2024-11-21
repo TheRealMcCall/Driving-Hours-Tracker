@@ -7,6 +7,12 @@ function saveLog() {
     let startTime = document.getElementById("trip-start-time").value;
     let finishTime = document.getElementById("trip-finish-time").value;
 
+    // Code to ensure both fields are filled out
+    if (!startTime || !finishTime) {
+        alert("Please enter both start and finish times!");
+        return;
+    }
+
     // created variable to hold trip duration in the trips array
     let tripDuration = calculateTripDuration(startTime, finishTime);
 
