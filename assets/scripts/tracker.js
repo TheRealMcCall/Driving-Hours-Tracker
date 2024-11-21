@@ -61,6 +61,13 @@ function addTrip() {
 
 // Function to delete last trip log
 function removeLastLog(index) {
+
+    // Check to see that there are logs to be deleted
+    if (trips < 1) {
+        alert("No logs have been created yet");
+        return;
+    }
+
     // Remove the last trip log from the trips array
     trips.pop();
 
