@@ -13,6 +13,12 @@ function saveLog() {
         return;
     }
 
+    // Code to ensure finish time is later than start time
+    if (finishTime <= startTime) {
+        alert("Finish Time must be later than Start Time!");
+        return;
+    }
+
     // created variable to hold trip duration in the trips array
     let tripDuration = calculateTripDuration(startTime, finishTime);
 
