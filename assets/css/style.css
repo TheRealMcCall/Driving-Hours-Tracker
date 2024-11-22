@@ -64,6 +64,22 @@ strong {
     margin-top: 50px;
 }
 
+.driving-time-acceptable {
+    background-color: lightgreen;
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.driving-time-not-acceptable {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
 .continue-btn {
     background-color: #2c3e50;
     color: #fff;
