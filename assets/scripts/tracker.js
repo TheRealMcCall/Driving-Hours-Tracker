@@ -170,8 +170,22 @@ function calculateTotalDrivingTime() {
         totalTimeDisplay.classList.remove("driving-time-acceptable");
     }
 
-    // Event listener for the "Save changes" button in the modal
-    document.getElementById("save-log-btn").addEventListener("click", saveLog);
+    let remainingHoursDisplay = document.getElementById("remaining-time-today");
+    if (totalMinutes > 600) {
+        remainingHoursDisplay.textContent = "You have exceeded your driving hours for today";
+        remainingHoursDisplay.classList.add("driving-time-not-acceptable");
+        remainingHoursDisplay.classList.remove("driving-time-acceptable");
+    } else if (totalMinutes > 599) {
+        remainingHoursDisplay.textContent = "You have run out of driving time today";
+        remainingHoursDisplay.classList.add("driving-time-not-acceptable");
+        remainingHoursDisplay.classList.remove("driving-time-acceptable");
+    } else {
+        remainingHoursDisplay.classList.add("driving-time-acceptable");
+        remainingHoursDisplay.classList.remove("driving-time-not-acceptable");
+    }
+}
+// Event listener for the "Save changes" button in the modal
+document.getElementById("save-log-btn").addEventListener("click", saveLog);
 
-    // Event listener for the "Remove Last Log" button
-    document.getElementById("removeLogButton").addEventListener("click", removeLastLog);
+// Event listener for the "Remove Last Log" button
+document.getElementById("removeLogButton").addEventListener("click", removeLastLog);
