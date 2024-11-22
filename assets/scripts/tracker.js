@@ -4,8 +4,8 @@ let trips = [];
 // Function to save a new trip from the modal
 function saveLog() {
     // Get the input values from the modal
-    let startTime = document.getElementById("trip-start-time").value;
-    let finishTime = document.getElementById("trip-finish-time").value;
+    let startTime = document.getElementById("tripStartTime").value;
+    let finishTime = document.getElementById("tripFinishTime").value;
     let isOvernight = document.getElementById("overnightTrip").checked;
 
     // Code to ensure both fields are filled out
