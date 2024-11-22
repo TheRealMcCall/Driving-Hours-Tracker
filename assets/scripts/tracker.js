@@ -135,6 +135,11 @@ function calculateTotalDrivingTime() {
         let startTotalMinutes = startHour * 60 + startMinute;
         let finishTotalMinutes = finishHour * 60 + finishMinute;
 
+        // If there is an overnight trip then add 1440 minutes to the total time driven
+        if (trip.isOvernight) {
+            finishTotalMinutes += 1440
+        }
+
         totalMinutes += (finishTotalMinutes - startTotalMinutes);
     });
 
