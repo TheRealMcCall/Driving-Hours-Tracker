@@ -6,6 +6,7 @@ function saveLog() {
     // Get the input values from the modal
     let startTime = document.getElementById("trip-start-time").value;
     let finishTime = document.getElementById("trip-finish-time").value;
+    let isOvernight = document.getElementById("overnightTrip").checked;
 
     // Code to ensure both fields are filled out
     if (!startTime || !finishTime) {
@@ -13,20 +14,25 @@ function saveLog() {
         return;
     }
 
-    // Code to ensure finish time is later than start time
-    if (finishTime <= startTime) {
-        alert("Finish Time must be later than Start Time!");
-        return;
+    let tripDuration;
+    if (isOvernight) {
+        tripDuration = calculateOvernightTripDuration(startTime, finishTime);
+    } else {
+        // Code to ensure finish time is later than start time
+        if (finishTime <= startTime) {
+            alert("Finish Time must be later than Start Time!");
+            return;
+        }
+        // created variable to hold trip duration in the trips array
+        tripDuration = calculateTripDuration(startTime, finishTime);
     }
-
-    // created variable to hold trip duration in the trips array
-    let tripDuration = calculateTripDuration(startTime, finishTime);
 
     // Add the relevant variables to the trips array trip
     trips.push({
         startTime,
         finishTime,
-        tripDuration
+        tripDuration,
+        isOvernight
     });
 
     // Log to check trips being added to the array
@@ -94,6 +100,25 @@ function calculateTripDuration(startTime, finishTime) {
     let minutes = totalMinutes % 60;
 
     console.log("Time between start and finish time", hours, minutes);
+
+    return `${hours} hours ${minutes} minutes`;
+}
+// Function to calculate trip duration when the trip is overnight
+function calculateOvernightTripDuration(startTime, finishTime) {
+    let [startHour, startMinute] = startTime.split(":").map(Number);
+    let [finishHour, finishMinute] = finishTime.split(":").map(Number);
+
+    // Add 24 hours to the finish time to account for overnight trips
+    finishHour += 24;
+
+    let startTotalMinutes = startHour * 60 + startMinute;
+    let finishTotalMinutes = finishHour * 60 + finishMinute;
+
+    let totalMinutes = finishTotalMinutes - startTotalMinutes;
+    let hours = Math.floor(totalMinutes / 60);
+    let minutes = totalMinutes % 60;
+
+    console.log("Overnight trip duration:", hours, "hours", minutes, "minutes");
 
     return `${hours} hours ${minutes} minutes`;
 }
