@@ -54,7 +54,6 @@ function addTrip() {
     //Creates a div with information for each trip log saved.
     trips.forEach((trip, index) => {
         let tripDiv = document.createElement("div");
-        tripDiv.classList.add("trip-entry");
         tripDiv.innerHTML = `
             <h3>Trip ${index + 1}</h3>
             <p><strong>Start:</strong> ${trip.startTime}</p>
