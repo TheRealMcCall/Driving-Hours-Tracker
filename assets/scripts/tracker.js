@@ -14,9 +14,9 @@ function saveLog() {
         return;
     }
 
-    let tripDuration;
+    let tripData;
     if (isOvernight) {
-        tripDuration = calculateOvernightTripDuration(startTime, finishTime);
+        tripData = calculateOvernightTripDuration(startTime, finishTime);
     } else {
         // Code to ensure finish time is later than start time
         if (finishTime <= startTime) {
@@ -24,14 +24,15 @@ function saveLog() {
             return;
         }
         // created variable to hold trip duration in the trips array
-        tripDuration = calculateTripDuration(startTime, finishTime);
+        tripData = calculateTripDuration(startTime, finishTime);
     }
 
     // Add the relevant variables to the trips array trip
     trips.push({
         startTime,
         finishTime,
-        tripDuration,
+        tripDuration: tripData.formatted,
+        tripDurationInMinutes: tripData.duration,
         isOvernight
     });
 
@@ -42,6 +43,7 @@ function saveLog() {
     addTrip();
 
     calculateTotalDrivingTime()
+    checkMaximumTripDuration()
 }
 
 // Function to add trips to the page
@@ -100,8 +102,14 @@ function calculateTripDuration(startTime, finishTime) {
 
     console.log("Time between start and finish time", hours, minutes);
 
-    return `${hours} hours ${minutes} minutes`;
+    return {
+        // duration in minutes
+        duration: totalMinutes,
+        // duration in text format
+        formatted: `${hours} hours ${minutes} minutes`
+    };
 }
+
 // Function to calculate trip duration when the trip is overnight
 function calculateOvernightTripDuration(startTime, finishTime) {
     let [startHour, startMinute] = startTime.split(":").map(Number);
@@ -119,7 +127,12 @@ function calculateOvernightTripDuration(startTime, finishTime) {
 
     console.log("Overnight trip duration:", hours, "hours", minutes, "minutes");
 
-    return `${hours} hours ${minutes} minutes`;
+    return {
+        // duration in minutes
+        duration: totalMinutes,
+        // duration in text format
+        formatted: `${hours} hours ${minutes} minutes`
+    };
 }
 
 // Function to calculate the total driving hours for the day
@@ -184,6 +197,24 @@ function calculateTotalDrivingTime() {
         remainingHoursDisplay.classList.remove("driving-time-not-acceptable");
     }
 }
+
+// Check if any trip's duration in minutes exceeds 330 minutes (5.5 hours)
+function checkMaximumTripDuration() {
+
+    let exceedsDuration = trips.some(trip => trip.tripDurationInMinutes > 330);
+
+    let tripDurationAllowed = document.getElementById("tripDurationAllowed");
+    if (exceedsDuration) {
+        tripDurationAllowed.textContent = "One or more trips exceed the maximum allowed duration!";
+        tripDurationAllowed.classList.add("driving-time-not-acceptable");
+        tripDurationAllowed.classList.remove("driving-time-acceptable");
+    } else {
+        tripDurationAllowed.textContent = "All trips are within allowed trip duration";
+        tripDurationAllowed.classList.add("driving-time-acceptable");
+        tripDurationAllowed.classList.remove("driving-time-not-acceptable");
+    }
+}
+
 // Event listener for the "Save changes" button in the modal
 document.getElementById("save-log-btn").addEventListener("click", saveLog);
 
