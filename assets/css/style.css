@@ -7,6 +7,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(206, 206, 212);
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 main {
@@ -32,7 +35,7 @@ a {
 }
 
 .clock-logo {
-    width: 60px;
+    width: 48px;
 }
 
 .introduction-header {

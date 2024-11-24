@@ -27,7 +27,7 @@
     </header>
 
     <main>
-        <section class="section">
+        <section class="container-fluid">
             <div class="row">
                 <h2 class="col text-center introduction-header">
                     Select if you would like to add or remove a log by using the buttons below
@@ -35,68 +35,63 @@
             </div>
 
             <!-- buttons for adding and removing trip logs -->
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col text-center">
-                        <button type="button" class="btn btn-add-log" data-bs-toggle="modal" id="addLogButton"
-                            data-bs-target="#addLogModal">
-                            Add Log
-                        </button>
-                        <button type="button" class="btn btn-remove-log" id="removeLogButton">Remove Last Log
-                        </button>
-
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-add-log" data-bs-toggle="modal" id="addLogButton"
+                        data-bs-target="#addLogModal">
+                        Add Log
+                    </button>
+                    <button type="button" class="btn btn-remove-log" id="removeLogButton">Remove Last Log
+                    </button>
                 </div>
             </div>
+        </section>
 
-            <!-- code for modal -->
-            <div class="modal" id="addLogModal" tabindex="-1" aria-labelledby="addLog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5 text-center w-100" id="addLog">Enter your trips start and finish
-                                times
-                            </h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="cancel"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row justify-content-center align-items-center">
-                                <div class="col-auto text-center">
-                                    <label for="trip-start-time" class="form-label">Start Time</label>
-                                    <input type="time" class="form-control" id="tripStartTime">
-                                </div>
-                                <div class="col-auto text-center">
-                                    <label for="trip-finish-time" class="form-label">Finish Time</label>
-                                    <input type="time" class="form-control" id="tripFinishTime">
-                                </div>
-                                <div class="col-auto text-center form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="overnightTrip">
-                                    <label class="form-check-label" for="overnightTrip">
-                                        Overnight Trip?
-                                    </label>
-                                </div>
+        <!-- code for modal -->
+        <div class="modal" id="addLogModal" tabindex="-1" aria-labelledby="addLog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-center w-100" id="addLog">Enter your trips start and finish
+                            times
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="cancel"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-auto text-center">
+                                <label for="trip-start-time" class="form-label">Start Time</label>
+                                <input type="time" class="form-control" id="tripStartTime">
+                            </div>
+                            <div class="col-auto text-center">
+                                <label for="trip-finish-time" class="form-label">Finish Time</label>
+                                <input type="time" class="form-control" id="tripFinishTime">
+                            </div>
+                            <div class="col-auto text-center form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="overnightTrip">
+                                <label class="form-check-label" for="overnightTrip">
+                                    Overnight Trip?
+                                </label>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-primary" id="save-log-btn" data-bs-dismiss="modal">Save
-                                changes</button>
-                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" id="save-log-btn" data-bs-dismiss="modal">Save
+                            changes</button>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Container to display trip entries -->
-            <div class="container text-center trip-data">
-                <div class="row">
-                    <div class="col">
-                        <div id="tripContainer"></div>
-                    </div>
+        <!-- Container to display trip entries -->
+        <div class="container text-center trip-data">
+            <div class="row">
+                <div class="col">
+                    <div id="tripContainer"></div>
                 </div>
             </div>
-
-        </section>
+        </div>
 
         <section>
             <div class="row justify-content-center">
