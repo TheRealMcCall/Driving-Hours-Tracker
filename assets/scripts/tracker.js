@@ -84,6 +84,9 @@ function removeLastLog(index) {
     // Recalculate total driving time
     calculateTotalDrivingTime();
 
+    // Check to see if any trips have exceeded their duration
+    checkMaximumTripDuration()
+
     // Log to check trips are being removed from the array
     console.log("Log to check if array is being removed from properly", trips);
 }
