@@ -165,7 +165,7 @@ function calculateTotalDrivingTime() {
     console.log("Calculation of trip time for the day", totalHours, remainingMinutes);
 
     // Update total time on the page
-    document.getElementById("total-time-driven-today").textContent = `${totalHours} hours ${remainingMinutes} minutes`;
+    document.getElementById("totalTimeDrivenToday").textContent = `${totalHours} hours ${remainingMinutes} minutes`;
 
     // Calculate the remaining time (assuming maximum daily driving time is 10 hours)
     let maxDailyDrivingTime = 10 * 60;
@@ -175,10 +175,10 @@ function calculateTotalDrivingTime() {
 
     console.log("Calculation of remaining time left for the day", maxDailyDrivingTime, "-", totalMinutes, "=", remainingHours, "hours", remainingMinutesLeft, "minutes left");
 
-    document.getElementById("remaining-time-today").textContent = `${remainingHours} hours ${remainingMinutesLeft} minutes`;
+    document.getElementById("remainingTimeToday").textContent = `${remainingHours} hours ${remainingMinutesLeft} minutes`;
 
     // Code to change colour based on whether the driving hours are less or more than 10
-    let totalTimeDisplay = document.getElementById("total-time-driven-today");
+    let totalTimeDisplay = document.getElementById("totalTimeDrivenToday");
     if (totalMinutes < 601) {
         totalTimeDisplay.classList.add("driving-time-acceptable");
         totalTimeDisplay.classList.remove("driving-time-not-acceptable");
@@ -187,7 +187,7 @@ function calculateTotalDrivingTime() {
         totalTimeDisplay.classList.remove("driving-time-acceptable");
     }
 
-    let remainingHoursDisplay = document.getElementById("remaining-time-today");
+    let remainingHoursDisplay = document.getElementById("remainingTimeToday");
     if (totalMinutes > 600) {
         remainingHoursDisplay.textContent = "You have exceeded your driving hours for today";
         remainingHoursDisplay.classList.add("driving-time-not-acceptable");
@@ -220,7 +220,7 @@ function checkMaximumTripDuration() {
 }
 
 // Event listener for the "Save changes" button in the modal
-document.getElementById("save-log-btn").addEventListener("click", saveLog);
+document.getElementById("saveLogButton").addEventListener("click", saveLog);
 
 // Event listener for the "Remove Last Log" button
 document.getElementById("removeLogButton").addEventListener("click", removeLastLog);
