@@ -64,8 +64,17 @@ a {
 }
 
 .trip-data {
+    margin-top: 30px;
+    margin-bottom: 20px;
     background-color: #2b3e4f;
     color: white;
+    width: 650px;
+}
+
+.trip-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #55697b
 }
 
 .hidden {
