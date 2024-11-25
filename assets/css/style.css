@@ -73,6 +73,10 @@ a {
     font-size: 25px;
 }
 
+.info-display {
+    margin-bottom: 60px;
+}
+
 .trip-data {
     margin-top: 30px;
     margin-bottom: 20px;
