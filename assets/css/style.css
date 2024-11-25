@@ -35,6 +35,11 @@ main {
     background-color: rgb(206, 206, 212);
 }
 
+.menu-btn:hover {
+    background-color: #34495e;
+    color: white !important;
+}
+
 .header-brand {
 
     font-weight: bold;
@@ -63,18 +68,25 @@ a {
     margin-right: 20px;
 }
 
+.tracker-intro-text {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
 .trip-data {
     margin-top: 30px;
     margin-bottom: 20px;
     background-color: #2b3e4f;
     color: white;
-    width: 650px;
+    padding: 15px;
 }
 
 .trip-list {
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #55697b
+    background-color: #55697b;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .hidden {
@@ -117,6 +129,10 @@ strong {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-header {
+    background-color: darkgray;
 }
 
 .continue-btn:hover {

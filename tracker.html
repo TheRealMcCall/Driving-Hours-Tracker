@@ -55,9 +55,9 @@
     <main>
         <section class="container-fluid">
             <div class="row">
-                <h2 class="col text-center introduction-header">
+                <p class="col text-center tracker-intro-text">
                     Select if you would like to add or remove a log by using the buttons below
-                </h2>
+                </p>
             </div>
 
             <!-- buttons for adding and removing trip logs -->
@@ -111,9 +111,9 @@
         </div>
 
         <!-- Container to display trip entries -->
-        <div class="container text-center trip-data">
-            <div class="row">
-                <div class="col">
+        <div class="container-fluid text-center trip-data">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6">
                     <div id="tripContainer"></div>
                 </div>
             </div>
@@ -123,33 +123,29 @@
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="card time-left-card text-center">
-                        <h3 class="card-header">
-                            Total Time Driven Today
-                        </h3>
+                        <div class="card-header">
+                            <h3 class="mb-0">Total Time Driven Today</h3>
+                        </div>
                         <div class="card-body">
-                            <p class="card-title" id="total-time-driven-today">No Driving Time Has Been Logged Yet
+                            <p class="card-title" id="total-time-driven-today">No Driving Time Has Been Logged Yet</p>
+                        </div>
 
-                            </p>
+                        <div class="card-header">
+                            <h3 class="mb-0">Time Left To Drive Today</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title" id="remaining-time-today">10 hours 0 minutes</p>
+                        </div>
 
-                            <h3 class="card-header">
-                                Time left to drive today
-                            </h3>
-                            <div class="card-body">
-                                <p class="card-title" id="remaining-time-today">10 hours 0 minutes
-
-                                </p>
-                            </div>
-
-                            <h3 class="card-header">
-                                Maximum Trip Duration
-                            </h3>
-                            <div class="card-body">
-                                <p class="card-title" id="tripDurationAllowed">No trip logs have been entered yet
-                                </p>
-                            </div>
+                        <div class="card-header">
+                            <h3 class="mb-0">Maximum Trip Duration</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title" id="tripDurationAllowed">No trip logs have been entered yet</p>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
 
     </main>
