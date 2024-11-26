@@ -58,6 +58,7 @@ By streamlining the process of tracking driving hours, the website aims to reduc
 - Technologies used to create the site include:
     * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - was used to create the website.
     * [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used for the styling of the website.
+    * [JavaScript](https://www.w3schools.com/js/) - was used to add interactivity to the tracker.
     * [Bootstrap](https://getbootstrap.com/) - Framework used.
     * [Gitpod](https://gitpod.io/) - was the cloud based IDE used for creating and editing of the code.
     * [VSCode](https://code.visualstudio.com/) - IDE Used.
