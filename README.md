@@ -46,11 +46,77 @@ By streamlining the process of tracking driving hours, the website aims to reduc
 ### Frequent Visitor Goals:
 * Track Progress towards Goals: As a frequent user, I want a clear display of my total driving hours and the remaining driving time left.
 
+## Features
+
 + ### Home Page
+
+    - Represents:
+
+        * The name of the application.
+        * Information about the tracker and what the user can expect.
+        * Github link at the bottom of the page.
+        * The page is responsive on common screen sizes.
+
+![Home Page Screen](documentation/home-page.png)
+
+#### Header and Navigation buttons
+
+- Includes:
+
+    * The name of the web application.
+    * Has logos that represent the site being a time tracking tool.
+    * Clickable header that brings you back to the home page.
+    * Contains navigation buttons that takes you to the home, tracker or rules page.
+    * The navigation buttons change colour when you hover over them.
+
+![Header Section](documentation/header-image.png)
+
+#### Introduction Section
+
+- Includes:
+        
+    * An introduction to the tracker explaining what to expect.
+    * Explanation of features for the tracker.
+    * Continue button that changes colour when hovered over.
+    * Continue button when clicked moves to the tracker section of the site.
+
+![Introduction Section](documentation/intro-image.png)
+
+#### Footer Section
+
+- Includes:
+
+    * Copyright name which links to github site and changes colour when hovered over.
+
+![Footer Section](documentation/footer-image.png)
 
 --- 
 + ### Tracker Page
 
+    - Includes:
+       
+        * A fully responsive page on all screen sizes.
+        * An option to add log which brings up a modal to enter start and finish time.
+        * an option to remove last log.
+        * An information panel with time driven today section.
+        * An information panel with time left to drive section.
+        * an information panel which whether trip durations are within the rule set.
+        * all panels change colour from green to red to indicate compliance.
+
+![Tracker Page](documentation/tracker-page.png)
+---
++ ### Rules Page
+
+    - Includes:
+        
+        * An identical Header Section as the main page for consistency.
+        * An identical Footer Section as the main page for consistency.
+        * A paragraph with a simplified explanation of driving hours rules.
+        * A card explaining maximum driving hours.
+        * A card explaining maximum trip duration.
+        * A small print section explaining that drivers should also do their own research on regulations.
+
+![Rules Page](documentation/rules-page.png)
 ---
 
 ## Technologies Used
@@ -85,7 +151,6 @@ By streamlining the process of tracking driving hours, the website aims to reduc
 
 
 #### Desktop
-
 
 ---
 
