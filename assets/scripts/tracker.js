@@ -6,9 +6,9 @@ let trips = [];
 // Function to save a new trip from the modal
 function saveLog() {
     // Get the input values from the modal
-    let startTime = document.getElementById("tripStartTime").value;
-    let finishTime = document.getElementById("tripFinishTime").value;
-    let isOvernight = document.getElementById("overnightTrip").checked;
+    let startTime = document.getElementById("trip-start-time").value;
+    let finishTime = document.getElementById("trip-finish-time").value;
+    let isOvernight = document.getElementById("overnight-trip").checked;
 
     // Code to ensure both fields are filled out
     if (!startTime || !finishTime) {
@@ -50,7 +50,7 @@ function saveLog() {
 
 // Function to add trips to the page
 function addTrip() {
-    let tripContainer = document.getElementById("tripContainer");
+    let tripContainer = document.getElementById("trip-container");
 
     // Clear existing trips
     tripContainer.innerHTML = "";
@@ -167,7 +167,7 @@ function calculateTotalDrivingTime() {
     console.log("Calculation of trip time for the day", totalHours, remainingMinutes);
 
     // Update total time on the page
-    document.getElementById("totalTimeDrivenToday").textContent = `${totalHours} hours ${remainingMinutes} minutes`;
+    document.getElementById("total-time-driven-today").textContent = `${totalHours} hours ${remainingMinutes} minutes`;
 
     // Calculate the remaining time (assuming maximum daily driving time is 10 hours)
     let maxDailyDrivingTime = 10 * 60;
@@ -177,10 +177,10 @@ function calculateTotalDrivingTime() {
 
     console.log("Calculation of remaining time left for the day", maxDailyDrivingTime, "-", totalMinutes, "=", remainingHours, "hours", remainingMinutesLeft, "minutes left");
 
-    document.getElementById("remainingTimeToday").textContent = `${remainingHours} hours ${remainingMinutesLeft} minutes`;
+    document.getElementById("remaining-time-today").textContent = `${remainingHours} hours ${remainingMinutesLeft} minutes`;
 
     // Code to change colour based on whether the driving hours are less or more than 10
-    let totalTimeDisplay = document.getElementById("totalTimeDrivenToday");
+    let totalTimeDisplay = document.getElementById("total-time-driven-today");
     if (totalMinutes < 601) {
         totalTimeDisplay.classList.add("driving-time-acceptable");
         totalTimeDisplay.classList.remove("driving-time-not-acceptable");
@@ -189,7 +189,7 @@ function calculateTotalDrivingTime() {
         totalTimeDisplay.classList.remove("driving-time-acceptable");
     }
 
-    let remainingHoursDisplay = document.getElementById("remainingTimeToday");
+    let remainingHoursDisplay = document.getElementById("remaining-time-today");
     if (totalMinutes > 600) {
         remainingHoursDisplay.textContent = "You have exceeded your driving hours for today";
         remainingHoursDisplay.classList.add("driving-time-not-acceptable");
@@ -209,7 +209,7 @@ function checkMaximumTripDuration() {
 
     let exceedsDuration = trips.some(trip => trip.tripDurationInMinutes > 330);
 
-    let tripDurationAllowed = document.getElementById("tripDurationAllowed");
+    let tripDurationAllowed = document.getElementById("trip-duration-allowed");
     if (exceedsDuration) {
         tripDurationAllowed.textContent = "One or more trips exceed the maximum allowed duration!";
         tripDurationAllowed.classList.add("driving-time-not-acceptable");
@@ -222,7 +222,7 @@ function checkMaximumTripDuration() {
 }
 
 // Event listener for the "Save changes" button in the modal
-document.getElementById("saveLogButton").addEventListener("click", saveLog);
+document.getElementById("save-log-button").addEventListener("click", saveLog);
 
 // Event listener for the "Remove Last Log" button
-document.getElementById("removeLogButton").addEventListener("click", removeLastLog);
+document.getElementById("remove-log-button").addEventListener("click", removeLastLog);

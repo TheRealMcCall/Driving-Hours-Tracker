@@ -67,22 +67,22 @@
             <div class="row justify-content-center">
                 <div class="col text-center">
                     <button type="button" class="btn btn-add-log" aria-label="Add log to tracker" data-bs-toggle="modal"
-                        id="addLogButton" data-bs-target="#addLogModal">
+                        id="add-log-button" data-bs-target="#add-log-modal">
                         Add Log
                     </button>
                     <button type="button" class="btn btn-remove-log" aria-label="Remove last log from tracker"
-                        id="removeLogButton">Remove Last Log
+                        id="remove-log-button">Remove Last Log
                     </button>
                 </div>
             </div>
         </section>
 
         <!-- code for modal -->
-        <aside class="modal" id="addLogModal" tabindex="-1" aria-labelledby="addLog" aria-hidden="true">
+        <aside class="modal" id="add-log-modal" tabindex="-1" aria-labelledby="add-log" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal-title fs-5 text-center w-100" id="addLog">Enter your trips start and finish
+                        <h2 class="modal-title fs-5 text-center w-100" id="add-log">Enter your trips start and finish
                             times
                         </h2>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="cancel"></button>
@@ -91,15 +91,15 @@
                         <div class="row justify-content-center align-items-center">
                             <div class="col-auto text-center">
                                 <label for="trip-start-time" class="form-label">Start Time</label>
-                                <input type="time" class="form-control" id="tripStartTime">
+                                <input type="time" class="form-control" id="trip-start-time">
                             </div>
                             <div class="col-auto text-center">
                                 <label for="trip-finish-time" class="form-label">Finish Time</label>
-                                <input type="time" class="form-control" id="tripFinishTime">
+                                <input type="time" class="form-control" id="trip-finish-time">
                             </div>
                             <div class="col-auto text-center form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="overnightTrip">
-                                <label class="form-check-label" for="overnightTrip">
+                                <input class="form-check-input" type="checkbox" value="" id="overnight-trip">
+                                <label class="form-check-label" for="overnight-trip">
                                     Overnight Trip?
                                 </label>
                             </div>
@@ -107,7 +107,7 @@
                     </section>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary" id="saveLogButton" data-bs-dismiss="modal">Save
+                        <button type="button" class="btn btn-primary" id="save-log-button" data-bs-dismiss="modal">Save
                             changes</button>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
         <div class="container-fluid text-center trip-data">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-                    <div id="tripContainer"></div>
+                    <div id="trip-container"></div>
                 </div>
             </div>
         </div>
@@ -132,21 +132,21 @@
                             <h3 class="mb-0">Total Time Driven Today</h3>
                         </div>
                         <div class="card-body">
-                            <p class="card-title" id="totalTimeDrivenToday">No Driving Time Has Been Logged Yet</p>
+                            <p class="card-title" id="total-time-driven-today">No Driving Time Has Been Logged Yet</p>
                         </div>
 
                         <div class="card-header">
                             <h3 class="mb-0">Time Left To Drive Today</h3>
                         </div>
                         <div class="card-body">
-                            <p class="card-title" id="remainingTimeToday">10 hours 0 minutes</p>
+                            <p class="card-title" id="remaining-time-today">10 hours 0 minutes</p>
                         </div>
 
                         <div class="card-header">
                             <h3 class="mb-0">Maximum Trip Duration</h3>
                         </div>
                         <div class="card-body">
-                            <p class="card-title" id="tripDurationAllowed">No trip logs have been entered yet</p>
+                            <p class="card-title" id="trip-duration-allowed">No trip logs have been entered yet</p>
                         </div>
                     </div>
                 </div>
