@@ -2,6 +2,9 @@
 ---
 
 # *Driving Hours Tracker*
+
+![Responsive Mockup](documentation/responsive_preview.png)
+
 The site can be accessed by clicking on [this Link.](https://therealmccall.github.io/Driving-Hours-Tracker/)
 
 ---
