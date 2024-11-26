@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 // create an array to hold trip data
 let trips = [];
 
@@ -42,8 +44,8 @@ function saveLog() {
     // use addTrip function to display trip container on the tracker page.
     addTrip();
 
-    calculateTotalDrivingTime()
-    checkMaximumTripDuration()
+    calculateTotalDrivingTime();
+    checkMaximumTripDuration();
 }
 
 // Function to add trips to the page
@@ -56,7 +58,7 @@ function addTrip() {
     //Creates a div with information for each trip log saved.
     trips.forEach((trip, index) => {
         let tripDiv = document.createElement("div");
-        tripDiv.classList.add("trip-list")
+        tripDiv.classList.add("trip-list");
         tripDiv.innerHTML = `
             <h3>Trip ${index + 1}</h3>
             <p><strong>Start:</strong> ${trip.startTime}</p>
@@ -86,7 +88,7 @@ function removeLastLog(index) {
     calculateTotalDrivingTime();
 
     // Check to see if any trips have exceeded their duration
-    checkMaximumTripDuration()
+    checkMaximumTripDuration();
 
     // Log to check trips are being removed from the array
     console.log("Log to check if array is being removed from properly", trips);
@@ -153,7 +155,7 @@ function calculateTotalDrivingTime() {
 
         // If there is an overnight trip then add 1440 minutes to the total time driven
         if (trip.isOvernight) {
-            finishTotalMinutes += 1440
+            finishTotalMinutes += 1440;
         }
 
         totalMinutes += (finishTotalMinutes - startTotalMinutes);
