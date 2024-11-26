@@ -2,7 +2,7 @@
 ---
 
 # *Driving Hours Tracker*
-The site can be accessed by this [link](https://therealmccall.github.io/Driving-Hours-Tracker/
+The site can be accessed by clicking on [this Link.](https://therealmccall.github.io/Driving-Hours-Tracker/)
 
 ---
 ## Contents
@@ -20,7 +20,11 @@ The site can be accessed by this [link](https://therealmccall.github.io/Driving-
 ---
 
 ## Project Overview
+The Driving Hours Calculator website is designed to help both individual drivers and transport companies efficiently track and manage their driving hours in accordance with legal regulations. As drivers face increasing pressure to meet both productivity goals and compliance standards, this tool simplifies the complex task of calculating and tracking driving hours to ensure that drivers adhere to required rest periods and avoid violations.
 
+The website offers an easy-to-use interface that allows users to input driving start and end times, automatically calculating their trip duration, total driving hours, and hours remaining for the day. In addition to this core functionality, the site generates trip logs and a summary information panel that provide a clear view, helping them meet regulatory requirements.
+
+By streamlining the process of tracking driving hours, the website aims to reduce errors, improve time management, and ensure compliance with transport industry regulations. This tool benefits both individual drivers seeking a simple way to log their hours and companies managing multiple drivers, ensuring they stay compliant while optimizing productivity.
 
 ## User Stories
 
