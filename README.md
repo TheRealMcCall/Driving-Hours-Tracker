@@ -31,6 +31,20 @@ By streamlining the process of tracking driving hours, the website aims to reduc
 
 ## User Stories
 
+### First Time Visitor Goals:
+
+* Understand Site Purpose: As a first-time visitor, I want a clear explanation of the site’s purpose.
+* Easy Navigation: As a first-time visitor, I want simple access to the driving hours tracker with a user-friendly interface.
+* Learn Basic Legal Requirements: As a first-time visitor, I want a quick overview of essential driving hours regulations.
+
+### Returning Visitor Goals:
+
+* Quick Access to Tracker Features: As a returning user, I want to be able to easily locate the tracker and use key features, such as adding and removing logs.
+* Clear View of Logs: As a returning user, I want to be able to clearly view the driving logs I have inputted.
+* Detailed Summary: As a returning user, I want to be able to clearly see when I have exceeded any driving hours.
+
+### Frequent Visitor Goals:
+* Track Progress towards Goals: As a frequent user, I want a clear display of my total driving hours and the remaining driving time left.
 
 + ### Home Page
 
