@@ -194,3 +194,13 @@ strong {
     color: white;
     max-width: 100%;
 }
+
+/* Styling for copyright social link */
+.social-link {
+    color: white;
+}
+
+/* Styling for copyright social link when hovered over */
+.social-link:hover {
+    color: black;
+}
