@@ -74,8 +74,16 @@ Manual testing was carried out on all pages to ensure consistency.
 + ### CSS
   No errors or warnings were found when passing through the official W3C (Jigsaw) validator.
 
-  ![Tracker Page](documentation/validation/css-validation.png)
- 
+    ![Tracker Page CSS Validator](documentation/validation/css-validation.png)
+
++ ### JS
+    - No errors or warnings were found when passing through the official [JSHint](https://jshint.com/) validator.
+
+    ![Tracker Page JavaScript Validator](documentation/validation/javascript-validation.png)
+
+    - These were the settings used with the JSHint validator.
+
+    ![Tracker Page Javascript Validator Settings](documentation/validation/javascript-validation-settings.png)
 ---
 
 + ## LightHouse report
