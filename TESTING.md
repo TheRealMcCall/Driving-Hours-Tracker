@@ -74,11 +74,24 @@ Manual testing was carried out on all pages to ensure consistency.
 + ### CSS
   No errors or warnings were found when passing through the official W3C (Jigsaw) validator.
 
-  ![Form Completed Page](documentation/validation/css-validation.png)
+  ![Tracker Page](documentation/validation/css-validation.png)
  
 ---
 
 + ## LightHouse report
+ - Using lighthouse in devtools I confirmed that the website is performing well, accessible and colors and fonts chosen are readable.
+    
+  ### Home page
+
+  ![Home Page Lighthouse](documentation/lighthouse-testing/home-page-lighthouse.png)
+
+  ### Tracker page
+
+  ![Tracker Page Lighthouse](documentation/lighthouse-testing/tracker-page-lighthouse.png)
+
+  ### Rules page
+
+  ![Rules Page Lighthouse](documentation/lighthouse-testing/rules-page-lighthouse.png)
 
 ---
 ## Bugs
