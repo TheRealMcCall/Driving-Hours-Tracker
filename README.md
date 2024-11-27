@@ -13,6 +13,7 @@ The site can be accessed by clicking on [this Link.](https://therealmccall.githu
 * [Project Overview](#project-overview)
 * [User Stories](#user-stories)
 * [Features](#features)
+* [Future Development](#future-development)
 * [Technologies Used](#technologies-used)
 * [Design](#design)
 * [Wireframes](#wireframes)
@@ -118,6 +119,17 @@ By streamlining the process of tracking driving hours, the website aims to reduc
 
 ![Rules Page](documentation/rules-page.png)
 ---
+
+## Future Development
+
+- In the futures I would like to implement the following extra features:
+
+    * Database storage to allow for additional features including multiple days tracking.
+    * Ability to login to save data to an individual.
+    * Automatically detect if a driver is logging an overnight trip.
+    * Calculate break taken between trip logs.
+    * If a driver drives for more than 5 and a half hours without a 30 minutes break then logs duration to be added together.
+    * Fix unsolved bug where a user can start their next trip within the trip before.
 
 ## Technologies Used
 
