@@ -57,14 +57,24 @@ Manual testing was carried out on all pages to ensure consistency.
 ## Validator Testing
 + ### HTML
   #### Home Page
+    - No errors or warnings were found when passing through the official W3C validator.
+
+    ![Home Page HTML Validator](documentation/validation/home-page-validation.png)
     
   #### Tracker Page
+    - No errors or warnings were found when passing through the official W3C validator.
+
+    ![Tracker Page HTML Validator](documentation/validation/tracker-page-validation.png)
 
   #### Rules Page
+    - No errors or warnings were found when passing through the official W3C validator.
+
+    ![Rules Page HTML Validator](documentation/validation/rules-page-validation.png)
 
 + ### CSS
+  No errors or warnings were found when passing through the official W3C (Jigsaw) validator.
 
-+ ### JavaScript
+  ![Form Completed Page](documentation/validation/css-validation.png)
  
 ---
 
