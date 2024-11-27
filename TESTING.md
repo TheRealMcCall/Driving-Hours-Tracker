@@ -103,9 +103,34 @@ Manual testing was carried out on all pages to ensure consistency.
 
 ---
 ## Bugs
-+ ### Solved Bugs
+### Solved Bugs
 
-+ ### Unsolved bugs.
+- Problem: Trips duplicating instead of listing one by one
+
+![Trip Duplication Bug](documentation/bugs/duplicate-bug.png)
+    
+- Solution: added code to remove trips existing trips and start with a blank trip container using the following code:
+
+        // Clear existing trips
+        tripContainer.innerHTML = "";
+
+- Problem: Total Hours driven does not update when you remove a trip
+
+![Hours Driven Bug](documentation/bugs/hours-driven-bug.png)
+    
+- Solution: Add CalculateTotalDrivingTime() function to removeLastLog function to solve bug with Total time driven not displaying properly
+
+        // Recalculate total driving time
+    calculateTotalDrivingTime();
+
+
+### Unsolved bugs.
+
+- Problem: Tracker allows the user to create a trip start-time within another trip time.
+
+![Unsolved bug](documentation/bugs/unsolved-bug.png)
+
+- Possible Solution: I am confident with some more time I would have solved this bug.
 
 ---
 
