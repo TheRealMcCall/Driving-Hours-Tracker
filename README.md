@@ -218,15 +218,20 @@ In your IDE Terminal, type the following command to clone my repository:
 
 ### Content
 
+- [Bootstrap 5 Modal](https://getbootstrap.com/docs/5.0/components/modal/) - for instructions on how to build a modal (which I used as the method for creating logs)
+
 ### Media
 
 - Pocket watch image was sourced from [Pixabay](https://www.Pixabay.cp) and can be found [here](https://pixabay.com/vectors/clock-time-watch-pocket-watch-158617/).
 
 ### Tools
+- Screenshot Images for the README file were scaled down with [GIMP](https://www.gimp.org/).
+- [Ui.dev](https://ui.dev/amiresponsive) - Website used for creating a preview of my website on different screen sizes.
 
 ## Acknowledgements
 - [Iuliia Konovalova](https://github.com/IuliiaKonovalova) - My Code Insitute Mentor for all her help, support and advice.
 - [Lewis Dillon](https://github.com/LewisMDillon) - Code Insitute Cohort Facilitator weekly stand-ups and motivational support.
 - [Dom Francis](https://github.com/dvfrancis) - Fellow Code Insitute Student for his continuous motivational support.
+- [Michael Linley] - Good friend of mine, for all his support and encouragement.
 
 ---
