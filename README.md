@@ -241,3 +241,5 @@ Please refer to [TESTING.md](TESTING.md) file for all documentation related to t
 - [Michael Linley] - Good friend of mine, for all his support and encouragement.
 
 ---
+
+* [Back To Top](#contents)
