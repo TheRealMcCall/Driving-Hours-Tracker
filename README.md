@@ -137,6 +137,14 @@ By streamlining the process of tracking driving hours, the website aims to reduc
 
 ### Color Scheme
 
+- Dark-blue-grey was used for the navigation bar background as it has a modern and professional tone, it provides a sense of stability and structure to the interface.  It also contrasts well with lighter elements, ensuring easy navigation while maintaining a clear aesthetic.
+
+- A light grey was used as the main background colour to create a neutral canvas that allows content to be more prominent while mainintaining a modern feel.
+
+- A dark grey background was used for the card headers to add depth and contract to the design.  This also gives the card headers a distintive look, helping users intuitively focus on key sections of the display.
+
+- A white background was reserved for displaying critical information to maximize readability and clarity. This color dynamically changes to green or red to provide immediate visual feedback to the user. Green reassures the user that their activities are within safe limits, while red alerts them when they are not.
+
 
 ### Typography
 
@@ -145,6 +153,8 @@ By streamlining the process of tracking driving hours, the website aims to reduc
 - Button typography is **clear and consistent**, focusing on functionality over decoration.
 - The buttons large size and contrast make them easy to spot and interact with, enhancing accessibility.
 - The modal headers and labels use **structured, centered typography** that directs focus on user input fields. This aligns with the goal of facilitating quick and accurate data entry.
+
+--
 
 - The typography for cards and trip logs is **hierarchical**:
   - **Bold headings** (e.g., "Total Time Driven Today") immediately communicate key information categories.
