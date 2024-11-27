@@ -140,6 +140,17 @@ By streamlining the process of tracking driving hours, the website aims to reduc
 
 ### Typography
 
+- The **bold, large, font** for the header conveys clarity and modernity. It grabs attention, reflects the utility-based purpose of the application, and ensures readability at a glance.
+- The main body text is kept **simple and clean** and ensures readability, particularly on digital screens, making it user-friendly for all audiences.
+- Button typography is **clear and consistent**, focusing on functionality over decoration.
+- The buttons large size and contrast make them easy to spot and interact with, enhancing accessibility.
+- The modal headers and labels use **structured, centered typography** that directs focus on user input fields. This aligns with the goal of facilitating quick and accurate data entry.
+
+- The typography for cards and trip logs is **hierarchical**:
+  - **Bold headings** (e.g., "Total Time Driven Today") immediately communicate key information categories.
+  - Smaller, clear fonts for the details (e.g., "10 hours 0 minutes") ensure the most important data is easily digestible.
+  - Typography within the cards are styled with color cues to differentiate between acceptable and non-acceptable driving durations.
+  - The use of bold and contrasting colors (light green for acceptable, red for warnings) enhances user comprehension.
 
 ### Wireframes
 
