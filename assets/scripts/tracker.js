@@ -38,9 +38,6 @@ function saveLog() {
         isOvernight
     });
 
-    // Log to check trips being added to the array
-    console.log("Log to check if array is being added to properly", trips);
-
     // use addTrip function to display trip container on the tracker page.
     addTrip();
 
@@ -90,8 +87,6 @@ function removeLastLog(index) {
     // Check to see if any trips have exceeded their duration
     checkMaximumTripDuration();
 
-    // Log to check trips are being removed from the array
-    console.log("Log to check if array is being removed from properly", trips);
 }
 
 //Function to calculate trip duration
@@ -105,8 +100,6 @@ function calculateTripDuration(startTime, finishTime) {
     let totalMinutes = finishTotalMinutes - startTotalMinutes;
     let hours = Math.floor(totalMinutes / 60);
     let minutes = totalMinutes % 60;
-
-    console.log("Time between start and finish time", hours, minutes);
 
     return {
         // duration in minutes
@@ -130,8 +123,6 @@ function calculateOvernightTripDuration(startTime, finishTime) {
     let totalMinutes = finishTotalMinutes - startTotalMinutes;
     let hours = Math.floor(totalMinutes / 60);
     let minutes = totalMinutes % 60;
-
-    console.log("Overnight trip duration:", hours, "hours", minutes, "minutes");
 
     return {
         // duration in minutes
@@ -164,8 +155,6 @@ function calculateTotalDrivingTime() {
     let totalHours = Math.floor(totalMinutes / 60);
     let remainingMinutes = totalMinutes % 60;
 
-    console.log("Calculation of trip time for the day", totalHours, remainingMinutes);
-
     // Update total time on the page
     document.getElementById("total-time-driven-today").textContent = `${totalHours} hours ${remainingMinutes} minutes`;
 
@@ -174,8 +163,6 @@ function calculateTotalDrivingTime() {
     let remainingMinutesToday = maxDailyDrivingTime - totalMinutes;
     let remainingHours = Math.floor(remainingMinutesToday / 60);
     let remainingMinutesLeft = remainingMinutesToday % 60;
-
-    console.log("Calculation of remaining time left for the day", maxDailyDrivingTime, "-", totalMinutes, "=", remainingHours, "hours", remainingMinutesLeft, "minutes left");
 
     document.getElementById("remaining-time-today").textContent = `${remainingHours} hours ${remainingMinutesLeft} minutes`;
 
