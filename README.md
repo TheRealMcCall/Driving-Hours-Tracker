@@ -238,7 +238,7 @@ Please refer to [TESTING.md](TESTING.md) file for all documentation related to t
 - [Iuliia Konovalova](https://github.com/IuliiaKonovalova) - My Code Insitute Mentor for all her help, support and advice.
 - [Lewis Dillon](https://github.com/LewisMDillon) - Code Insitute Cohort Facilitator weekly stand-ups and motivational support.
 - [Dom Francis](https://github.com/dvfrancis) - Fellow Code Insitute Student for his continuous motivational support.
-- [Michael Linley] - Good friend of mine, for all his support and encouragement.
+- Michael Linley - Good friend of mine, for all his support and encouragement.
 
 ---
 
