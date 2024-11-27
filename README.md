@@ -143,6 +143,23 @@ By streamlining the process of tracking driving hours, the website aims to reduc
 
 ### Wireframes
 
+#### Mobile devices
+
+- [Home Page. Mobile Screen](documentation/wireframes/home-page-mobile.png)
+- [Tracker Page. Mobile Screen](documentation/wireframes/tracker-mobile.png)
+- [Rules Page. Mobile Screen](documentation/wireframes/rules-mobile.png)
+
+#### Tablets
+
+- [Home Page. Tablet Screen](documentation/wireframes/home-page-tablet.png)
+- [Tracker Page. Tablet Screen](documentation/wireframes/tracker-tablet.png)
+- [Rules Page. Tablet Screen](documentation/wireframes/rules-tablet.png)
+
+#### Desktop
+
+- [Home Page. Desktop Screen](documentation/wireframes/home-page-desktop.png)
+- [Tracker Page. Desktop Screen](documentation/wireframes/tracker-desktop.png)
+- [Rules Page.. Desktop Screen](documentation/wireframes/rules-desktop.png)
 
 #### Mobile devices
 
