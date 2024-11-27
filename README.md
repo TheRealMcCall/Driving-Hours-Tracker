@@ -194,14 +194,6 @@ By streamlining the process of tracking driving hours, the website aims to reduc
 - [Tracker Page. Desktop Screen](documentation/wireframes/tracker-desktop.png)
 - [Rules Page.. Desktop Screen](documentation/wireframes/rules-desktop.png)
 
-#### Mobile devices
-
-
-#### Tablets
-
-
-#### Desktop
-
 ---
 
 ## Deployment
@@ -225,6 +217,8 @@ In your IDE Terminal, type the following command to clone my repository:
 ---
 
 ## Testing
+
+Please refer to [TESTING.md](TESTING.md) file for all documentation related to testing.
 
 ## Credits
 
