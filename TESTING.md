@@ -54,6 +54,48 @@ Chrome development tools were also used throughout the design process to check r
 
 Manual testing was carried out on all pages to ensure consistency.
 
+### Tests that were carried out on all pages:
+
+| Feature | Action | Expected Result | Working as intended |
+| --- | --- | --- | --- |
+|HEADER|
+|Driving Hours Tracker Text	  | Click  | Links to Home Page | Yes, clicks results in the user being redirected to the home page. |
+|Home Button  | Hover over home button  | Background and font colour changes | Yes, background darkens and font changes white as intended. |
+|Tracker Button  | Hover over tracker button  | Background and font colour changes | Yes, background darkens and font changes white as intended. |
+|Rules Button  | Hover over rules button | Background and font colour changes | Yes, background darkens and font changes white as intended. |
+|Home Button  | Click on Home  | Links to Home Page| Yes, User is redirected to the home page |
+|Tracker Button  | Click on tracker button  | Links to tracker page | Yes, User is redirected to the tracker page |
+|Rules Button  | Click on rules button  | Links to rules page | Yes, User is redirected to the rules page |
+|  |  | |
+| FOOTER  | | |
+| Copyright Section	| Hover over author |text turns black | Yes, the fonts changes colour as anticipated |
+|  |  | |
+
+### Home Page:
+| Feature | Action | Expected Result | Working as intended |
+| --- | --- | --- | --- |
+| Page Content | Displaying content	|Introduction text is displayed | Yes, paragraph explaining the site is showing properly.|
+| Page Content | Responsive page	|Page is responsive at all screen sizes | Yes, tested alongside development with chrome dev tools |
+
+### Tracker Page:
+
+| Feature | Action | Expected Result | Working as intended |
+| --- | --- | --- | --- |
+| Add Log Button | Hover over add log button	|Background changes colour | Yes, background lightens as intended. |
+| Remove Log Button | Responsive page	|Background changes colour | Yes, background lightens as intended. |
+| Add Log Button | Click on add log button	|Pops up add log Modal | Yes, modal correctly displays when add log button is pressed. |
+| Remove Log Button | Click on remove log button	|remove last logs if there are any | Yes, button correctly removes last log from the page. |
+
+### Modal Popup:
+
+
+
+### Rules Page:
+| Feature | Action | Expected Result | Working as intended |
+| --- | --- | --- | --- |
+| Page Content | Displaying content	|Driver rules are displayed | Yes, driving rules and other page content displaying correctly |
+| Page Content | Responsive page	|Page is responsive at all screen sizes | Yes, tested alongside development with chrome dev tools |
+
 ## Validator Testing
 + ### HTML
   #### Home Page
