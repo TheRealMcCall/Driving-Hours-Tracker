@@ -19,7 +19,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Browser | Screenshot | Notes |
 | --- | --- | --- |
 | Chrome | ![screenshot](documentation/compatibility/chrome-screen.png) | Works as expected |
-| Firefox | ![screenshot](documentation/compatibility/firefox-screen.png) | works as expected |
+| Firefox | ![screenshot](documentation/compatibility/firefox-screen.png) | Works as expected |
 | Edge | ![screenshot](documentation/compatibility/edge-screen.png) | Works as expected |
 
 ## Responsiveness
@@ -46,9 +46,9 @@ The website was checked on various personal devices and [responsiveviewer.org](h
 | 1080p Portrait Desktop Monitor | ![screenshot](documentation/responsiveness/1080p-desktop-portrait-responsive.png) | Works as expected |
 | Google Pixel 8 Pro | ![screenshot](documentation/responsiveness/pixel-8-pro-responsive.png) | Works as expected |
 
-Please note some of the screenshots above have been re-scaled to be easily viewed.
+Please note some screenshots have been re-scaled for better viewing.
 
-Chrome development tools were also used throughout the design process to check responsiveness and breakpoints. Adjustments were made accordingly.
+Chrome developer tools were used throughout the design process to check responsiveness and breakpoints. Adjustments were made accordingly.
 
 ## Manual Testing
 
@@ -100,7 +100,6 @@ Manual testing was carried out on all pages to ensure consistency.
 | --- | --- | --- | --- |
 | Modal Display| Information display	| Modal Display has explanation header and correct input fields | Yes, Modal is displaying as intended. |
 | Modal input fields | entering data into input fields	| Only allows user to enter time format | Yes, input fields only allow the user to input a time |
-| Modal input fields | entering data into input fields	| Does not allow user to pick a finish time that is before the start time | Yes, this function is working working as intended |
 | Modal input fields | entering data into input fields	| Does not allow user to pick a finish time that is before the start time | Yes, this function is working working as intended |
 | Cancel Button | Hover over cancel button	| Background of button changes colour | Yes, background of button darkens as intended |
 | Save Changes Button | Hover over save changes Button	| Background changes colour | Yes, background of button darkens as intended |
@@ -168,20 +167,20 @@ Manual testing was carried out on all pages to ensure consistency.
 ## Bugs
 ### Solved Bugs
 
-- Problem: Trips duplicating instead of listing one by one
+- Problem: Trips were duplicating instead of listing one by one
 
 ![Trip Duplication Bug](documentation/bugs/duplicate-bug.png)
     
-- Solution: added code to remove trips existing trips and start with a blank trip container using the following code:
+- Solution: Added code to clear existing trips before creating new ones. Using the following code:
 
         // Clear existing trips
         tripContainer.innerHTML = "";
 
-- Problem: Total Hours driven does not update when you remove a trip
+- Problem: Total hours driven did not update when a trip was removed
 
 ![Hours Driven Bug](documentation/bugs/hours-driven-bug.png)
     
-- Solution: Add CalculateTotalDrivingTime() function to removeLastLog function to solve bug with Total time driven not displaying properly
+- Solution: Added the CalculateTotalDrivingTime() function to removeLastLog function:
 
         // Recalculate total driving time
     calculateTotalDrivingTime();
@@ -189,11 +188,11 @@ Manual testing was carried out on all pages to ensure consistency.
 
 ### Unsolved bugs.
 
-- Problem: Tracker allows the user to create a trip start-time within another trip time.
+- Problem: The tracker allows the user to create a trip start time that overlaps with an existing trip.
 
 ![Unsolved bug](documentation/bugs/unsolved-bug.png)
 
-- Possible Solution: I am confident with some more time I would have solved this bug.
+- Possible Solution: I am confident I can resolve this issue with additional time.
 
 ---
 
