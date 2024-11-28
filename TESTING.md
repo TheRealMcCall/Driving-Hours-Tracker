@@ -81,16 +81,37 @@ Manual testing was carried out on all pages to ensure consistency.
 
 | Feature | Action | Expected Result | Working as intended |
 | --- | --- | --- | --- |
-| Add Log Button | Hover over add log button	|Background changes colour | Yes, background lightens as intended. |
-| Remove Log Button | Responsive page	|Background changes colour | Yes, background lightens as intended. |
-| Add Log Button | Click on add log button	|Pops up add log Modal | Yes, modal correctly displays when add log button is pressed. |
-| Remove Log Button | Click on remove log button	|remove last logs if there are any | Yes, button correctly removes last log from the page. |
+| Add Log Button | Hover over add log button	|Background of button changes colour | Yes, background of button lightens as intended |
+| Remove Log Button | Hover over remove log button	|Background changes colour | Yes, background of button lightens as intended |
+| Add Log Button | Click on add log button	|Pops up add log Modal | Yes, modal correctly displays when add log button is pressed |
+| Remove Log Button | Click on remove log button when there are logs | removes the last log | Yes, button correctly removes last log from the page |
+| Remove Log Button | Click on remove log button when there are no logs	| alerts user that no logs have been created | Yes, user is alerted |
+| Total Time Driven Today | Information display | Displays total time driven today to user | Yes, total time driven updates when new logs are added |
+| Time Left To Drive Today | Information display | Displays total time remaining to user | Yes, total time remaining updates when new logs are added |
+| Maximum Trip Duration | Information display | Displays when a single trip log duration goes over 5 and a half hours | Yes, Maximum trip duration indicator works as intended |
+| Total Time Driven Today | Information display | Updates total time driven today when there are multiple trip logs added | Yes, total time driven updates when additional logs are added |
+| Time Left To Drive Today | Information display | Updates total time remaining to user when there are multiple trip logs added | Yes, total time remaining updates when additional logs are added |
+| Total Time Driven Today | Information display | Updates total time driven today when trip logs are removed | Yes, total time driven updates when trip logs are removed |
+| Time Left To Drive Today | Information display | Updates total time remaining to user when trip logs are removed | Yes, total time remaining updates when trip logs are removed |
 
 ### Modal Popup:
 
+| Feature | Action | Expected Result | Working as intended |
+| --- | --- | --- | --- |
+| Modal Display| Information display	| Modal Display has explanation header and correct input fields | Yes, Modal is displaying as intended. |
+| Modal input fields | entering data into input fields	| Only allows user to enter time format | Yes, input fields only allow the user to input a time |
+| Modal input fields | entering data into input fields	| Does not allow user to pick a finish time that is before the start time | Yes, this function is working working as intended |
+| Modal input fields | entering data into input fields	| Does not allow user to pick a finish time that is before the start time | Yes, this function is working working as intended |
+| Cancel Button | Hover over cancel button	| Background of button changes colour | Yes, background of button darkens as intended |
+| Save Changes Button | Hover over save changes Button	| Background changes colour | Yes, background of button darkens as intended |
+| Cancel Button | Click on Cancel Button	| closes modal and does not make any changes | Yes, modal correctly closes without making any changes to the logs |
+| Save Changes Button | Click on save changes button when any input fields data is missing | alerts user that both input fields must be filled in | Yes, button correctly alerts user and does not save a log |
+| Save Changes Button | Click on save changes button when both input fields are complete | closes modal, and saves a log to the tracker | Yes, button correctly saves a trip log to the tracker |
+| Save Changes button with Overnight Trip Checkbox | When checked save changes allows overnight trips | closes modal, and saves a log to the tracker, calculating overnight trip | Yes, button correctly saves an overnight trip log to the tracker |
 
 
 ### Rules Page:
+
 | Feature | Action | Expected Result | Working as intended |
 | --- | --- | --- | --- |
 | Page Content | Displaying content	|Driver rules are displayed | Yes, driving rules and other page content displaying correctly |
