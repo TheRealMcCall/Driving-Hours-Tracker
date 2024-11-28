@@ -5,6 +5,7 @@
 * [Browser Compatibility](#browser-compatibility)
 * [Responsiveness](#responsiveness)
 * [Manual Testing](#manual-testing)
+* [User Stories Testing](#user-stories-testing)
 * [Validator Testing](#validator-testing)
 * [LightHouse Report](#lighthouse-report)
 * [Bugs](#bugs)
@@ -115,6 +116,30 @@ Manual testing was carried out on all pages to ensure consistency.
 | --- | --- | --- | --- |
 | Page Content | Displaying content	|Driver rules are displayed | Yes, driving rules and other page content displaying correctly |
 | Page Content | Responsive page	|Page is responsive at all screen sizes | Yes, tested alongside development with chrome dev tools |
+
+## User Stories Testing
+
+### First Time User Goals:
+
+| Feature | Action | Expected Result | Working as intended |
+| --- | --- | --- | --- |
+| Site Purpose Explanation| When user opens homepage	| Clear and concise explanation of the site's purpose is displayed | Yes, the purpose is stated prominently |
+| Navigation Ease | Interacting with the navigation menu	| User can easily access the driving hours tracker | Yes, navigation is intuitive|
+| Legal Overview | Visit rules page	| Quick overview of essential driving hours regulations is displayed | Yes, a brief explanation of regulations are easily accessible|
+
+### Returning User Goals:
+
+| Feature | Action | Expected Result | Working as intended |
+| --- | --- | --- | --- |
+| Tracker Access | Click on tracker button	| Links directly to the tracker, enabling users to access key features | Yes, key features are easily accessible |
+| Driving Logs Display | View Tracker Page	| Driving logs are clearly displayed in an organized format | Yes, logs are visible and clear|
+| Summary Display | Check tracker summary section	| Summary shows any exceeded driving hour limits clearly | Yes, the summary functions with colour coding as expected|
+
+### Frequent User Goals:
+
+| Feature | Action | Expected Result | Working as intended |
+| --- | --- | --- | --- |
+| Progress Tracking | View Progress tracker | Displays total driving hours and remaining time at a glance | Yes, progress tracking is accurate and updates with every trip |
 
 ## Validator Testing
 + ### HTML
