@@ -5,7 +5,7 @@
 
 ![Responsive Mockup](documentation/responsive_preview.png)
 
-The site can be accessed by clicking on [this Link.](https://therealmccall.github.io/Driving-Hours-Tracker/)
+The site can be accessed by clicking on [this link.](https://therealmccall.github.io/Driving-Hours-Tracker/)
 
 ---
 ## Contents
@@ -42,7 +42,7 @@ By streamlining the process of tracking driving hours, the website aims to reduc
 
 * Quick Access to Tracker Features: As a returning user, I want to be able to easily locate the tracker and use key features, such as adding and removing logs.
 * Clear View of Logs: As a returning user, I want to be able to clearly view the driving logs I have inputted.
-* Detailed Summary: As a returning user, I want to be able to clearly see when I have exceeded any driving hours.
+* Detailed Summary: As a returning user, I want to be able to clearly see if I've exceeded any driving hours limits.
 
 ### Frequent Visitor Goals:
 * Track Progress towards Goals: As a frequent user, I want a clear display of my total driving hours and the remaining driving time left.
@@ -122,13 +122,13 @@ By streamlining the process of tracking driving hours, the website aims to reduc
 
 ## Future Development
 
-- In the futures I would like to implement the following extra features:
+- In the future, I would like to implement the following features:
 
     * Database storage to allow for additional features including multiple days tracking.
     * Ability to login to save data to an individual.
     * Automatically detect if a driver is logging an overnight trip.
     * Calculate break taken between trip logs.
-    * If a driver drives for more than 5 and a half hours without a 30 minutes break then logs duration to be added together.
+    * If a driver drives for more than 5 and a half hours without a 30 minutes break then logs duration to be conbined.
     * Fix unsolved bug where a user can start their next trip within the trip before.
 
 ## Technologies Used
@@ -153,7 +153,7 @@ By streamlining the process of tracking driving hours, the website aims to reduc
 
 - A light grey was used as the main background colour to create a neutral canvas that allows content to be more prominent while mainintaining a modern feel.
 
-- A dark grey background was used for the card headers to add depth and contract to the design.  This also gives the card headers a distintive look, helping users intuitively focus on key sections of the display.
+- A dark grey background was used for the card headers to add depth and contrast to the design.  This also gives the card headers a distintive look, helping users intuitively focus on key sections of the display.
 
 - A white background was reserved for displaying critical information to maximize readability and clarity. This color dynamically changes to green or red to provide immediate visual feedback to the user. Green reassures the user that their activities are within safe limits, while red alerts them when they are not.
 
@@ -228,7 +228,7 @@ Please refer to [TESTING.md](TESTING.md) file for all documentation related to t
 
 ### Media
 
-- Pocket watch image was sourced from [Pixabay](https://www.Pixabay.cp) and can be found [here](https://pixabay.com/vectors/clock-time-watch-pocket-watch-158617/).
+- Pocket watch image was sourced from [Pixabay](https://www.Pixabay.com) and can be found [here](https://pixabay.com/vectors/clock-time-watch-pocket-watch-158617/).
 
 ### Tools
 - Screenshot Images for the README file were scaled down with [GIMP](https://www.gimp.org/).
